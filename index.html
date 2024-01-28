@@ -1,0 +1,125 @@
+<!-- Yummy - Abdulrahman Zaki -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <meta
+      name="description"
+      content="Yummy is a Responsive HTML5 Template. It is creative, modern and built with latest technology."
+    />
+    <meta name="author" content="Abdulrahman Zaki" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+    <!-- CSS-animated hamburgers -->
+    <link rel="stylesheet" href="styles/hamburgers.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- Template Css File -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- ===== Start Side NavBar ===== -->
+    <nav class="sideNav">
+      <div class="linksBar p-4">
+        <ul class="list-unstyled">
+          <li onclick="showSearchInputs()">Search</li>
+          <li onclick="getData('categories')">Categories</li>
+          <li onclick="getData('area')">Area</li>
+          <li onclick="getData('ingredients')">Ingredients</li>
+          <li onclick="showContactInputs()">Contact Us</li>
+        </ul>
+        <div class="linksBar-footer">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p class="copyright">
+            Copyright © 2024 <br />
+            All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <div class="menuBar py-4 px-1">
+        <div class="logo">
+          <a href=""><img src="images/logo.png" alt="logo" class="w-100" /></a>
+        </div>
+        <div class="menu">
+          <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="menuBar-icons">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- ===== End Side NavBar ===== -->
+
+    <!-- ===== Start Search Inputs ===== -->
+    <section class="searchInputs d-none" id="searchInputs">
+      <div class="container pt-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Meal By Name"
+              id="searchByName"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Meal By First Letter"
+              id="searchByLetter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== End Search Inputs ===== -->
+
+    <!-- ===== Start Main Section ===== -->
+    <main class="main-section vh-100">
+      <div class="container py-5">
+        <!-- Start Inner Spinner  -->
+        <div
+          class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center"
+        >
+          <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <!-- End Inner Spinner  -->
+
+        <div class="row g-4" id="mainSection"></div>
+      </div>
+    </main>
+    <!-- ===== End Main Section ===== -->
+
+    <!-- ===== Start Loading Screen ===== -->
+    <div
+      class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- ===== End Loading Screen ===== -->
+
+    <!-- jQuery -->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <!-- Include jQuery Debounce -->
+    <script src="scripts/jquery.ba-throttle-debounce.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <!-- Template JS File -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

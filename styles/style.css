@@ -1,0 +1,137 @@
+/* Yummy - Abdulrahman Zaki */
+/* ===== Start General Rules ===== */
+body {
+  background-color: #0d0d0d;
+  color: #fff !important;
+}
+i {
+  cursor: pointer;
+}
+.alert {
+  width: fit-content;
+  font-size: 16px !important;
+}
+/* ===== End General Rules ===== */
+
+/* ===== Start Side NavBar ===== */
+.sideNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+.sideNav .linksBar,
+.sideNav .menuBar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Links Bar */
+.sideNav .linksBar {
+  background-color: #0d0d0d;
+  color: #fff !important;
+  max-width: 300px;
+}
+.sideNav .linksBar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+}
+.sideNav .linksBar ul li:hover {
+  color: #ccc;
+}
+.sideNav .linksBar-footer .social-icons {
+  margin-bottom: 10px;
+}
+.sideNav .linksBar-footer .social-icons i {
+  margin-right: 10px;
+}
+
+/* Menu Bar */
+.sideNav .menuBar {
+  background-color: #fff;
+  color: #0d0d0d;
+  align-items: center;
+  max-width: 66px;
+  /* margin-right: 66px; */
+}
+.sideNav .menuBar .logo {
+  width: 50px;
+}
+.sideNav .menuBar .menuBar-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.sideNav .menuBar .menuBar-icons i:first-child {
+  margin-bottom: 15px;
+}
+/* ===== End Side NavBar ===== */
+
+/* ===== Start Search Inputs ===== */
+.searchInputs {
+  margin-left: 66px !important;
+}
+.searchInputs input {
+  border: none !important;
+  outline: none !important;
+}
+/* ===== End Search Inputs ===== */
+
+/* ===== Start Main Section ===== */
+.main-section {
+  margin-left: 66px !important;
+}
+.main-section .item {
+  cursor: pointer;
+}
+.main-section .item .meal-layer {
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: #f9f6f6ca;
+  transition: 0.5s;
+}
+.main-section .item:hover .meal-layer {
+  top: 0;
+}
+/* ===== End Main Section ===== */
+
+/* ===== Start Loading Screen ===== */
+.loading-screen {
+  z-index: 9999;
+  display: flex;
+}
+.inner-loading-screen {
+  margin-left: 66px !important;
+  position: absolute;
+  z-index: 9;
+  background-color: #0d0d0d;
+  display: flex;
+}
+/* ===== End Loading Screen ===== */
+
+/* ===== Start Contact Us ===== */
+.contact {
+  gap: 4% 2%;
+}
+.contact > div:not(:last-child) {
+  width: 49%;
+}
+.contact input{
+  border: none !important;
+}
+@media (max-width: 991px) {
+  .contact {
+    gap: 4%;
+  }
+
+  .contact > div:not(:last-child) {
+    width: 100%;
+  }
+}
+/* ===== End Contact Us ===== */
